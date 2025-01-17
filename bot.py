@@ -1,8 +1,7 @@
-...
+
 import random
 from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
-from telegram.ext import Application
 
 # Загадки с уровнями сложности
 riddles = {
@@ -350,4 +349,4 @@ def main():
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
 
-tgbot = TGBot(router)
+
